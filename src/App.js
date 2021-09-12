@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import './App.css';
-import results from './speedtest-results';
+import results from './speedtest-results.json';
 
 export default function App() {
   const BYTE_TO_MBIT = 125000;
