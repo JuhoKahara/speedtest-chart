@@ -3,31 +3,64 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'r
 import './App.css';
 import results from './speedtest-results.json';
 
+// Rounds bytes to Mbit by multiplying it with 8 * 10^-6 with two decimal places
+// (Byte = 8 bits, 1 Mbit = 1 000 000 bits)
+const roundedByteToMbit = bandwidth => {
+  bandwidth *= 8 * 10**-6;
+  return bandwidth.toFixed(2)
+}
+
+// Converts the timestamp to a dictionary and calculates the timezone offset
+// Offset is multiplied by 60 000 to convert it from minutes to milliseconds
+const convertTime = timestamp => {
+  const ms = Date.parse(timestamp)
+  const offset = new Date().getTimezoneOffset();
+  timestamp = new Date(ms - (offset * 60000));
+
+  const date = {
+    'year': timestamp.getFullYear(),
+    'month': timestamp.getMonth(),
+    'day': timestamp.getDate(),
+    'weekday': timestamp.getDay(),
+    'hour': timestamp.getHours(),
+    'minute': timestamp.getMinutes()
+  }
+  
+  return date;
+}
+
 export default function App() {
-  const BYTE_TO_MBIT = 125000;
   const data = [];
+
   for (let i = 0; i < results.length; i++) {
+    const download = roundedByteToMbit(results[i].download.bandwidth);
+    const upload = roundedByteToMbit(results[i].upload.bandwidth);
+    const timestamp = results[i].timestamp;
+    const date = convertTime(timestamp);
+
+    console.log(date.hour);
+
     data[i] = {
-      "date": results[i].timestamp,
-      "download": results[i].download.bandwidth / BYTE_TO_MBIT,
-      "upload": results[i].upload.bandwidth / BYTE_TO_MBIT
+      "date": date.hour,
+      "download": download,
+      "upload": upload,
     }
   }
 
   return (
     <LineChart
-      width={ 500 }
+      width={ 1000 }
       height={ 300 }
       data={ data }
       margin={{
-        top:5,
-        right:30,
+        top: 20,
+        right: 30,
         left: 20,
         bottom: 5,
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="timestamp" />
+      <XAxis dataKey="date" />
       <YAxis />
       <Tooltip />
       <Legend />
