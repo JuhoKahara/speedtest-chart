@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import CustomTooltip from './components/CustomTooltip';
+import CustomTooltip from './components/CustomTooltip/CustomTooltip';
 import results from './speedtest-results.json';
 import './App.css';
 
@@ -38,7 +38,7 @@ export default function App() {
     const ping = results[i].ping.latency.toFixed(2);
 
     data[i] = {
-      date: date.hour,
+      date: date,
       download: download,
       upload: upload,
       ping: ping,
@@ -58,20 +58,21 @@ export default function App() {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="date" />
+      <XAxis dataKey="date.hour" />
       <YAxis />
       <Tooltip content={<CustomTooltip />} />
       <Legend />
       <Line 
         type="monotone" 
         dataKey="download" 
-        stroke="#82ca9d" 
-        activeDot={{ r: 8}} 
+        stroke="#6afff3" 
+        activeDot={{ r: 5 }} 
       />
       <Line 
         type="monotone" 
         dataKey="upload" 
-        stroke="#8884d8" 
+        stroke="#bf71ff" 
+        activeDot={{ r: 5 }} 
       />
     </LineChart>
   );

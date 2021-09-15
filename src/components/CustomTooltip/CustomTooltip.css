@@ -1,0 +1,17 @@
+.tooltip {
+    border: solid rgb(201, 201, 201) 1px;
+    padding: 4px;
+    background-color: white;
+}
+
+.tooltip-item {
+    margin: 4px;
+}
+
+.download {
+    color: #6afff3;
+}
+
+.upload {
+    color: #bf71ff;
+}
