@@ -1,7 +1,8 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import './App.css';
+import CustomTooltip from './components/CustomTooltip';
 import results from './speedtest-results.json';
+import './App.css';
 
 // Rounds bytes to Mbit by multiplying it with 8 * 10^-6 with two decimal places
 // (Byte = 8 bits, 1 Mbit = 1 000 000 bits)
@@ -10,12 +11,9 @@ const roundedByteToMbit = bandwidth => {
   return bandwidth.toFixed(2)
 }
 
-// Converts the timestamp to a dictionary and calculates the timezone offset
-// Offset is multiplied by 60 000 to convert it from minutes to milliseconds
+// Converts the timestamp to a dictionary
 const convertTime = timestamp => {
-  const ms = Date.parse(timestamp)
-  const offset = new Date().getTimezoneOffset();
-  timestamp = new Date(ms - (offset * 60000));
+  timestamp = new Date(timestamp)
 
   const date = {
     'year': timestamp.getFullYear(),
@@ -25,7 +23,7 @@ const convertTime = timestamp => {
     'hour': timestamp.getHours(),
     'minute': timestamp.getMinutes()
   }
-  
+
   return date;
 }
 
@@ -37,13 +35,13 @@ export default function App() {
     const upload = roundedByteToMbit(results[i].upload.bandwidth);
     const timestamp = results[i].timestamp;
     const date = convertTime(timestamp);
-
-    console.log(date.hour);
+    const ping = results[i].ping.latency.toFixed(2);
 
     data[i] = {
-      "date": date.hour,
-      "download": download,
-      "upload": upload,
+      date: date.hour,
+      download: download,
+      upload: upload,
+      ping: ping,
     }
   }
 
@@ -62,7 +60,7 @@ export default function App() {
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="date" />
       <YAxis />
-      <Tooltip />
+      <Tooltip content={<CustomTooltip />} />
       <Legend />
       <Line 
         type="monotone" 
