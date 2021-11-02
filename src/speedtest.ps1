@@ -20,11 +20,9 @@ if (-not(Test-path $speedtestResults -PathType leaf))
 }
 else # Change ']' from the end of the file to a comma
 {
-    $stream = [IO.File]::OpenWrite($speedtestResults)
-    $stream.SetLength($stream.Length - 4)
-    $stream.Close()
-    $stream.Dispose()
-    "," | Out-File -Append -Encoding utf8 -FilePath $speedtestResults
+    $content = Get-Content $speedtestResults
+    $content[-1] = $content[-1] -replace ']', ','
+    $content | Set-Content $speedtestResults
 }
 
 # Extract the most interesting information
