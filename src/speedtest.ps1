@@ -21,7 +21,7 @@ if (-not(Test-path $speedtestResults -PathType leaf))
 else # Change ']' from the end of the file to a comma
 {
     $content = Get-Content $speedtestResults
-    $content[-1] = $content[-1] -replace ']', ','
+    $content = $content -replace ']', ','
     $content | Set-Content $speedtestResults
 }
 
