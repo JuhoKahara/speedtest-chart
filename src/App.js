@@ -1,10 +1,10 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import CustomTooltip from './components/CustomTooltip/CustomTooltip';
 import results from './speedtest-results.json';
 import './App.css';
 
-// Rounds bytes to Mbit by multiplying it with 8 * 10^-6 with two decimal places
+// Converts bytes to Mbit by multiplying it with 8 * 10^-6 and rounds to two decimal places
 // (Byte = 8 bits, 1 Mbit = 1 000 000 bits)
 const roundedByteToMbit = bandwidth => {
   bandwidth *= 8 * 10**-6;
@@ -37,43 +37,51 @@ export default function App() {
     const date = convertTime(timestamp);
     const ping = results[i].ping.latency.toFixed(2);
 
-    data[i] = {
-      date: date,
-      download: download,
-      upload: upload,
-      ping: ping,
-    }
+    if (date.day === 12) {
+      console.log(typeof(download));
+      data.push({
+        date: date,
+        download: Number(download),
+        upload: Number(upload),
+        ping: ping,
+      })
+    } 
   }
 
   return (
-    <LineChart
-      width={ 1000 }
-      height={ 300 }
-      data={ data }
-      margin={{
-        top: 20,
-        right: 30,
-        left: 20,
-        bottom: 5,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="date.hour" />
-      <YAxis />
-      <Tooltip content={<CustomTooltip />} />
-      <Legend />
-      <Line 
-        type="monotone" 
-        dataKey="download" 
-        stroke="#6afff3" 
-        activeDot={{ r: 5 }} 
-      />
-      <Line 
-        type="monotone" 
-        dataKey="upload" 
-        stroke="#bf71ff" 
-        activeDot={{ r: 5 }} 
-      />
-    </LineChart>
+    <div className='chart-container'>
+      <ResponsiveContainer>
+        <LineChart
+          data={ data }
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <Legend />
+          <CartesianGrid strokeDasharray='3 3' stroke='darkgrey' />
+          <XAxis dataKey='date.hour' stroke='darkgrey' />
+          <YAxis stroke='darkgrey' />
+          <Tooltip content={<CustomTooltip />} />
+          <Line 
+            type='monotone' 
+            dataKey='download' 
+            stroke='#6afff3' 
+            dot={{ stroke: '#6afff3', fill: '#6afff3' }}
+            activeDot={{ r: 4 }} 
+          />
+          <Line 
+            type='monotone' 
+            dataKey='upload' 
+            stroke='#bf71ff' 
+            dot={{ stroke: '#bf71ff', fill: '#bf71ff' }}
+            activeDot={{ r: 4 }} 
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+    
   );
 }

@@ -1,11 +1,12 @@
 .tooltip {
     border: solid rgb(201, 201, 201) 1px;
     padding: 4px;
-    background-color: white;
+    background-color: #222222;
 }
 
 .tooltip-item {
     margin: 4px;
+    color: lightgrey;
 }
 
 .download {
