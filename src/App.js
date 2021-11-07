@@ -37,15 +37,12 @@ export default function App() {
     const date = convertTime(timestamp);
     const ping = results[i].ping.latency.toFixed(2);
 
-    if (date.day === 12) {
-      console.log(typeof(download));
-      data.push({
-        date: date,
-        download: Number(download),
-        upload: Number(upload),
-        ping: ping,
-      })
-    } 
+    data.push({
+      date: date,
+      download: Number(download),
+      upload: Number(upload),
+      ping: ping,
+    })
   }
 
   return (
