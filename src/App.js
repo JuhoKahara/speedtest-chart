@@ -22,17 +22,21 @@ const getWeekday = day => {
   return weekdays[day];
 }
 
+const getMinutesWithLeadingZeroes = minutes => {
+  return (minutes < 10 ? '0' : '') + minutes;
+}
+
 // Converts the timestamp to a dictionary
 const convertTime = timestamp => {
   timestamp = new Date(timestamp);
 
   const date = {
     'year': timestamp.getFullYear(),
-    'month': timestamp.getMonth(),
-    'date': timestamp.getDate(),
+    'month': timestamp.getMonth() + 1,
+    'day': timestamp.getDate(),
     'weekday': getWeekday(timestamp.getDay()),
     'hour': timestamp.getHours(),
-    'minute': timestamp.getMinutes()
+    'minute': getMinutesWithLeadingZeroes(timestamp.getMinutes())
   };
 
   return date;
@@ -48,7 +52,7 @@ export default function App() {
     const download = roundedByteToMbit(results[i].download.bandwidth);
     const upload = roundedByteToMbit(results[i].upload.bandwidth);
     const timestamp = results[i].timestamp;
-    const date = convertTime(timestamp);
+    const day = convertTime(timestamp);
     const ping = results[i].ping.latency;
 
     downloadSum += download;
@@ -56,7 +60,7 @@ export default function App() {
     pingSum += ping;
 
     data.push({
-      date: date,
+      date: day,
       download: download,
       upload: upload,
       ping: ping.toFixed(2),
@@ -85,21 +89,21 @@ export default function App() {
             type='monotone' 
             dataKey='download' 
             stroke='#6afff3' 
-            dot={{ stroke: '#6afff3', fill: '#6afff3' }}
-            activeDot={{ r: 4 }} 
+            dot={{ r: 0 }}
+            activeDot={{ stroke: '#6afff3', fill: '#6afff3', r: 2 }} 
           />
           <Line 
             type='monotone' 
             dataKey='upload' 
             stroke='#bf71ff' 
-            dot={{ stroke: '#bf71ff', fill: '#bf71ff' }}
-            activeDot={{ r: 4 }} 
+            dot={{ r: 0 }}
+            activeDot={{ stroke: '#bf71ff', fill: '#bf71ff', r: 2 }} 
           />
         </LineChart>
       </ResponsiveContainer>
-      <div>Average download speed: { calculateAverage(downloadSum) } Mbps</div>
-      <div>Average upload speed: { calculateAverage(uploadSum) } Mbps</div>
-      <div>Average ping: { calculateAverage(pingSum) } ms</div>
+      <div>{`Average download speed: ${calculateAverage(downloadSum)} Mbps`}</div>
+      <div>{`Average upload speed: ${calculateAverage(uploadSum)} Mbps`}</div>
+      <div>{`Average ping: ${calculateAverage(pingSum)} ms`}</div>
     </div>
     
   );
