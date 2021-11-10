@@ -8,41 +8,59 @@ import './App.css';
 // (Byte = 8 bits, 1 Mbit = 1 000 000 bits)
 const roundedByteToMbit = bandwidth => {
   bandwidth *= 8 * 10**-6;
-  return bandwidth.toFixed(2)
+  return Number(bandwidth.toFixed(2));
+}
+
+// Calculates the average
+const calculateAverage = sum => {
+  return (sum / results.length).toFixed(2)
+}
+
+// Takes weekday in number format and returns it as a proper weekday
+const getWeekday = day => {
+  const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  return weekdays[day];
 }
 
 // Converts the timestamp to a dictionary
 const convertTime = timestamp => {
-  timestamp = new Date(timestamp)
+  timestamp = new Date(timestamp);
 
   const date = {
     'year': timestamp.getFullYear(),
     'month': timestamp.getMonth(),
-    'day': timestamp.getDate(),
-    'weekday': timestamp.getDay(),
+    'date': timestamp.getDate(),
+    'weekday': getWeekday(timestamp.getDay()),
     'hour': timestamp.getHours(),
     'minute': timestamp.getMinutes()
-  }
+  };
 
   return date;
 }
 
 export default function App() {
   const data = [];
+  let downloadSum = 0;
+  let uploadSum = 0;
+  let pingSum = 0;
 
   for (let i = 0; i < results.length; i++) {
     const download = roundedByteToMbit(results[i].download.bandwidth);
     const upload = roundedByteToMbit(results[i].upload.bandwidth);
     const timestamp = results[i].timestamp;
     const date = convertTime(timestamp);
-    const ping = results[i].ping.latency.toFixed(2);
+    const ping = results[i].ping.latency;
+
+    downloadSum += download;
+    uploadSum += upload;
+    pingSum += ping;
 
     data.push({
       date: date,
-      download: Number(download),
-      upload: Number(upload),
-      ping: ping,
-    })
+      download: download,
+      upload: upload,
+      ping: ping.toFixed(2),
+    });
   }
 
   return (
@@ -59,7 +77,8 @@ export default function App() {
         >
           <Legend />
           <CartesianGrid strokeDasharray='3 3' stroke='darkgrey' />
-          <XAxis dataKey='date.hour' stroke='darkgrey' />
+          <XAxis dataKey='date.hour' stroke='darkgrey' xAxisId={0} />
+          <XAxis dataKey='date.weekday' stroke='darkgrey' xAxisId={1} allowDuplicatedCategory={false} />
           <YAxis stroke='darkgrey' />
           <Tooltip content={<CustomTooltip />} />
           <Line 
@@ -78,6 +97,9 @@ export default function App() {
           />
         </LineChart>
       </ResponsiveContainer>
+      <div>Average download speed: { calculateAverage(downloadSum) } Mbps</div>
+      <div>Average upload speed: { calculateAverage(uploadSum) } Mbps</div>
+      <div>Average ping: { calculateAverage(pingSum) } ms</div>
     </div>
     
   );
