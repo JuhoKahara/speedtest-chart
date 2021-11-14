@@ -13,6 +13,10 @@
     color: #6afff3;
 }
 
+.average-download {
+    color: yellow;
+}
+
 .upload {
     color: #bf71ff;
 }

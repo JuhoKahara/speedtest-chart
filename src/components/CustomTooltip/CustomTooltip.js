@@ -8,6 +8,7 @@ const CustomTooltip = ({ active, payload }) => {
         return (
             <div className="tooltip">
               <p className="tooltip-item download">{`download: ${payload.download} Mbps`}</p>
+              <p className="tooltip-item average-download">{`average download: ${payload.averageDownload} Mbps`}</p>
               <p className="tooltip-item upload">{`upload: ${payload.upload} Mbps`}</p>
               <p className="tooltip-item ping">{`ping: ${payload.ping} ms`}</p>
               <p className="tooltip-item date">{`date: ${date.day}.${date.month}.${date.year}`}</p>

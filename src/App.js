@@ -12,8 +12,8 @@ const roundedByteToMbit = bandwidth => {
 }
 
 // Calculates the average
-const calculateAverage = sum => {
-  return (sum / results.length).toFixed(2)
+const calculateAverage = (sum, total) => {
+  return (sum / total).toFixed(2)
 }
 
 // Takes weekday in number format and returns it as a proper weekday
@@ -62,6 +62,7 @@ export default function App() {
     data.push({
       date: day,
       download: download,
+      averageDownload: calculateAverage(downloadSum, i+1),
       upload: upload,
       ping: ping.toFixed(2),
     });
@@ -79,18 +80,27 @@ export default function App() {
             bottom: 5,
           }}
         >
-          <Legend />
+          <Legend wrapperStyle={{ top: 0, left: 25 }} />
           <CartesianGrid strokeDasharray='3 3' stroke='darkgrey' />
-          <XAxis dataKey='date.hour' stroke='darkgrey' xAxisId={0} />
-          <XAxis dataKey='date.weekday' stroke='darkgrey' xAxisId={1} allowDuplicatedCategory={false} />
+          <XAxis 
+            dataKey='date.hour' 
+            stroke='darkgrey' 
+            xAxisId={0}
+          />
+          <XAxis 
+            dataKey='date.weekday' 
+            stroke='darkgrey' 
+            xAxisId={1} 
+            allowDuplicatedCategory={false} 
+          />
           <YAxis stroke='darkgrey' />
           <Tooltip content={<CustomTooltip />} />
           <Line 
             type='monotone' 
             dataKey='download' 
-            stroke='#6afff3' 
+            stroke='turquoise' 
             dot={{ r: 0 }}
-            activeDot={{ stroke: '#6afff3', fill: '#6afff3', r: 2 }} 
+            activeDot={{ stroke: 'turquoise', fill: 'turquoise', r: 2 }} 
           />
           <Line 
             type='monotone' 
@@ -99,11 +109,18 @@ export default function App() {
             dot={{ r: 0 }}
             activeDot={{ stroke: '#bf71ff', fill: '#bf71ff', r: 2 }} 
           />
+          <Line 
+            type='monotone'
+            dataKey='averageDownload'
+            stroke='yellow'
+            dot={{ r: 0 }}
+            activeDot={{ r: 2 }} 
+          />
         </LineChart>
       </ResponsiveContainer>
-      <div>{`Average download speed: ${calculateAverage(downloadSum)} Mbps`}</div>
-      <div>{`Average upload speed: ${calculateAverage(uploadSum)} Mbps`}</div>
-      <div>{`Average ping: ${calculateAverage(pingSum)} ms`}</div>
+      <div>{`Average download speed: ${calculateAverage(downloadSum, results.length)} Mbps`}</div>
+      <div>{`Average upload speed: ${calculateAverage(uploadSum, results.length)} Mbps`}</div>
+      <div>{`Average ping: ${calculateAverage(pingSum, results.length)} ms`}</div>
     </div>
     
   );
