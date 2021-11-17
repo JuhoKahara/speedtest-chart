@@ -4,6 +4,8 @@ import CustomTooltip from './components/CustomTooltip/CustomTooltip';
 import results from './speedtest-results.json';
 import './App.css';
 
+const WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
 // Converts bytes to Mbit by multiplying it with 8 * 10^-6 and rounds to two decimal places
 // (Byte = 8 bits, 1 Mbit = 1 000 000 bits)
 const roundedByteToMbit = bandwidth => {
@@ -12,14 +14,8 @@ const roundedByteToMbit = bandwidth => {
 }
 
 // Calculates the average
-const calculateAverage = (sum, total) => {
-  return (sum / total).toFixed(2)
-}
-
-// Takes weekday in number format and returns it as a proper weekday
-const getWeekday = day => {
-  const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-  return weekdays[day];
+const calculateAverage = (sum, divider) => {
+  return (sum / divider).toFixed(2)
 }
 
 const getMinutesWithLeadingZeroes = minutes => {
@@ -34,7 +30,7 @@ const convertTime = timestamp => {
     'year': timestamp.getFullYear(),
     'month': timestamp.getMonth() + 1,
     'day': timestamp.getDate(),
-    'weekday': getWeekday(timestamp.getDay()),
+    'weekday': WEEK[timestamp.getDay()],
     'hour': timestamp.getHours(),
     'minute': getMinutesWithLeadingZeroes(timestamp.getMinutes())
   };
@@ -42,31 +38,60 @@ const convertTime = timestamp => {
   return date;
 }
 
-export default function App() {
+const weeklyView = () => {
   const data = [];
-  let downloadSum = 0;
-  let uploadSum = 0;
-  let pingSum = 0;
+  const pastWeek = new Date();
+  let averageDownload = 0;
+  let averageUpload = 0;
+  let averagePing = 0;
+
+  pastWeek.setDate(pastWeek.getDate()-7);
+
+  let i = 0;
+  while (i < results.length && new Date(results[results.length - 1 - i].timestamp) > pastWeek) {
+    i++;
+  }
+
+  results.splice(0, results.length - i)
+  let weekday = WEEK.indexOf(convertTime(results[0].timestamp).weekday);
+  let dailyResultCounter = 0;
 
   for (let i = 0; i < results.length; i++) {
     const download = roundedByteToMbit(results[i].download.bandwidth);
     const upload = roundedByteToMbit(results[i].upload.bandwidth);
     const timestamp = results[i].timestamp;
-    const day = convertTime(timestamp);
+    const date = convertTime(timestamp);
     const ping = results[i].ping.latency;
 
-    downloadSum += download;
-    uploadSum += upload;
-    pingSum += ping;
+    if (weekday !== WEEK.indexOf(date.weekday)) {
+      weekday === 6 ? weekday = 0 : weekday++;
+      averageDownload = download;
+      averageUpload = upload;
+      averagePing = ping;
+      dailyResultCounter = 1;
+    } else {
+      averageDownload += download;
+      averageUpload += upload;
+      averagePing += ping;
+      dailyResultCounter++;
+    }
 
     data.push({
-      date: day,
-      download: download,
-      averageDownload: calculateAverage(downloadSum, i+1),
-      upload: upload,
-      ping: ping.toFixed(2),
+      'date': date,
+      'download': download,
+      'upload': upload,
+      'ping': ping.toFixed(2),
+      'daily average download': calculateAverage(averageDownload, dailyResultCounter),
+      'daily average upload': calculateAverage(averageUpload, dailyResultCounter),
+      'daily average ping': calculateAverage(averagePing, dailyResultCounter)
     });
   }
+
+  return data;
+}
+
+export default function App() {
+  const data = weeklyView();
 
   return (
     <div className='chart-container'>
@@ -91,7 +116,6 @@ export default function App() {
             dataKey='date.weekday' 
             stroke='darkgrey' 
             xAxisId={1} 
-            allowDuplicatedCategory={false} 
           />
           <YAxis stroke='darkgrey' />
           <Tooltip content={<CustomTooltip />} />
@@ -111,16 +135,13 @@ export default function App() {
           />
           <Line 
             type='monotone'
-            dataKey='averageDownload'
+            dataKey='daily average download'
             stroke='yellow'
             dot={{ r: 0 }}
             activeDot={{ r: 2 }} 
           />
         </LineChart>
       </ResponsiveContainer>
-      <div>{`Average download speed: ${calculateAverage(downloadSum, results.length)} Mbps`}</div>
-      <div>{`Average upload speed: ${calculateAverage(uploadSum, results.length)} Mbps`}</div>
-      <div>{`Average ping: ${calculateAverage(pingSum, results.length)} ms`}</div>
     </div>
     
   );
