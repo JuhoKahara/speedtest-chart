@@ -1,7 +1,6 @@
-import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import CustomTooltip from './components/CustomTooltip/CustomTooltip';
-import results from './speedtest-results.json';
+import results from './speedtest-results';
 import './App.css';
 
 const WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

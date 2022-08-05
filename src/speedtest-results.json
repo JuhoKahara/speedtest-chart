@@ -1,0 +1,1585 @@
+[
+{
+    "timestamp": "2021-11-02T06:17:31Z",
+    "ping": {
+        "latency": 18.925000000000001
+    },
+    "download": {
+        "bandwidth": 22053520
+    },
+    "upload": {
+        "bandwidth": 7014726
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/2b5951f9-dd3b-4818-9e67-7d30bdb9ea87"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T06:18:03Z",
+    "ping": {
+        "latency": 19.491
+    },
+    "download": {
+        "bandwidth": 22537521
+    },
+    "upload": {
+        "bandwidth": 7115656
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/790a3ef6-3cf8-4f07-9b10-878533d3f3dd"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T07:11:51Z",
+    "ping": {
+        "latency": 22.934000000000001
+    },
+    "download": {
+        "bandwidth": 20553581
+    },
+    "upload": {
+        "bandwidth": 7198275
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/fa0aa052-a6a4-41ea-aa9c-d086764eddbe"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T08:11:58Z",
+    "ping": {
+        "latency": 18.992999999999999
+    },
+    "download": {
+        "bandwidth": 20726725
+    },
+    "upload": {
+        "bandwidth": 7032739
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/76365ed9-37cf-48f1-bbf7-ab5b04cc46ff"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T09:11:51Z",
+    "ping": {
+        "latency": 19.914000000000001
+    },
+    "download": {
+        "bandwidth": 27421735
+    },
+    "upload": {
+        "bandwidth": 7105742
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/da361edc-5524-4d47-9bf9-57bef6e9b6c6"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T10:11:56Z",
+    "ping": {
+        "latency": 19.949999999999999
+    },
+    "download": {
+        "bandwidth": 20496402
+    },
+    "upload": {
+        "bandwidth": 7113817
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/943275e7-8074-4152-9367-0462e5dc70f8"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T11:11:59Z",
+    "ping": {
+        "latency": 18.946999999999999
+    },
+    "download": {
+        "bandwidth": 17544082
+    },
+    "upload": {
+        "bandwidth": 6910171
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/8de07195-0c7c-4425-aa30-a78b64ce05e7"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T14:11:55Z",
+    "ping": {
+        "latency": 19.917000000000002
+    },
+    "download": {
+        "bandwidth": 21052256
+    },
+    "upload": {
+        "bandwidth": 6788531
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/4f7d34ba-d0f2-4720-b0bc-af881973ee2b"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T15:11:56Z",
+    "ping": {
+        "latency": 19.946999999999999
+    },
+    "download": {
+        "bandwidth": 16532994
+    },
+    "upload": {
+        "bandwidth": 6922598
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/2a22ffa5-1e63-49ba-94be-02dcb33fe70f"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T16:12:01Z",
+    "ping": {
+        "latency": 19.378
+    },
+    "download": {
+        "bandwidth": 13259005
+    },
+    "upload": {
+        "bandwidth": 7103986
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/9269ad21-9661-456d-aca9-c1939a4c0a4d"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T18:11:55Z",
+    "ping": {
+        "latency": 19.449999999999999
+    },
+    "download": {
+        "bandwidth": 16871951
+    },
+    "upload": {
+        "bandwidth": 6923664
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/79b5d820-c028-4fbd-99ba-77b88b149a14"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T19:12:01Z",
+    "ping": {
+        "latency": 19.895
+    },
+    "download": {
+        "bandwidth": 9816858
+    },
+    "upload": {
+        "bandwidth": 6911719
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/f6ecd7b6-5be9-4f7a-8aff-eeb02a3edf42"
+    }
+}
+,
+{
+    "timestamp": "2021-11-02T20:12:00Z",
+    "ping": {
+        "latency": 19.702999999999999
+    },
+    "download": {
+        "bandwidth": 12987319
+    },
+    "upload": {
+        "bandwidth": 2985875
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/e6b533fa-56b3-42de-b801-eda1925a6d56"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T07:50:49Z",
+    "ping": {
+        "latency": 20.024000000000001
+    },
+    "download": {
+        "bandwidth": 24070537
+    },
+    "upload": {
+        "bandwidth": 6871915
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/68e7347c-7a87-46bd-ae30-f38ae8368ede"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T08:50:23Z",
+    "ping": {
+        "latency": 19.981000000000002
+    },
+    "download": {
+        "bandwidth": 21796041
+    },
+    "upload": {
+        "bandwidth": 6943965
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/b5496b5f-b00c-4249-8d94-559a31d085a5"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T09:50:17Z",
+    "ping": {
+        "latency": 18.969000000000001
+    },
+    "download": {
+        "bandwidth": 26683730
+    },
+    "upload": {
+        "bandwidth": 6927419
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/f1a35130-c7a3-454e-8017-57d305b759eb"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T16:30:58Z",
+    "ping": {
+        "latency": 18.577000000000002
+    },
+    "download": {
+        "bandwidth": 14361771
+    },
+    "upload": {
+        "bandwidth": 7109283
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/5099698c-1b20-488a-b9c2-8dca0684dcf0"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T17:30:27Z",
+    "ping": {
+        "latency": 19.959
+    },
+    "download": {
+        "bandwidth": 14484653
+    },
+    "upload": {
+        "bandwidth": 7148511
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/637d1d07-eb2c-4bb0-9fc4-346616024aac"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T18:30:32Z",
+    "ping": {
+        "latency": 20.609000000000002
+    },
+    "download": {
+        "bandwidth": 14784516
+    },
+    "upload": {
+        "bandwidth": 7205435
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/fb227517-bd08-4a98-9864-18adc0aacd20"
+    }
+}
+,
+{
+    "timestamp": "2021-11-03T19:30:27Z",
+    "ping": {
+        "latency": 19.850999999999999
+    },
+    "download": {
+        "bandwidth": 12154188
+    },
+    "upload": {
+        "bandwidth": 3994649
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/86856f17-9f51-486b-879a-2b635d8d084c"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T08:02:29Z",
+    "ping": {
+        "latency": 19.934000000000001
+    },
+    "download": {
+        "bandwidth": 24599927
+    },
+    "upload": {
+        "bandwidth": 6909909
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/e33441bb-cdac-41cc-957c-a688140f9039"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T09:01:42Z",
+    "ping": {
+        "latency": 19.673999999999999
+    },
+    "download": {
+        "bandwidth": 28409833
+    },
+    "upload": {
+        "bandwidth": 7043016
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/8408b908-2596-4832-97d7-02b620cadbbe"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T10:01:42Z",
+    "ping": {
+        "latency": 19.939
+    },
+    "download": {
+        "bandwidth": 21440212
+    },
+    "upload": {
+        "bandwidth": 7175260
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/73cee257-0a8f-4f10-9ac4-eee03059b60f"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T11:01:41Z",
+    "ping": {
+        "latency": 18.995999999999999
+    },
+    "download": {
+        "bandwidth": 21957977
+    },
+    "upload": {
+        "bandwidth": 7061497
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/ab4cdff5-4b06-4390-ac6b-cac9b9313d0d"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T12:01:41Z",
+    "ping": {
+        "latency": 19.006
+    },
+    "download": {
+        "bandwidth": 20679914
+    },
+    "upload": {
+        "bandwidth": 7161573
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/3a290ec8-cd6e-4194-b0b4-973efa7cb65c"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T13:01:42Z",
+    "ping": {
+        "latency": 20.280999999999999
+    },
+    "download": {
+        "bandwidth": 17895580
+    },
+    "upload": {
+        "bandwidth": 7105321
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/72e2b29d-52d0-4b1c-acae-b83d549799ef"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T14:01:44Z",
+    "ping": {
+        "latency": 19.920999999999999
+    },
+    "download": {
+        "bandwidth": 16298038
+    },
+    "upload": {
+        "bandwidth": 6771243
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/8eb2b790-1aec-4e7b-bf1c-4a2ca7d31f36"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T15:01:42Z",
+    "ping": {
+        "latency": 19.937000000000001
+    },
+    "download": {
+        "bandwidth": 15766152
+    },
+    "upload": {
+        "bandwidth": 7040110
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/f8d8954c-405e-4b53-8d39-eff2c717781c"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T16:01:43Z",
+    "ping": {
+        "latency": 19.952000000000002
+    },
+    "download": {
+        "bandwidth": 18999625
+    },
+    "upload": {
+        "bandwidth": 6922477
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/afbf7284-1d45-44a1-a9c3-07fe694b1bb7"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T17:01:43Z",
+    "ping": {
+        "latency": 19.923999999999999
+    },
+    "download": {
+        "bandwidth": 15295725
+    },
+    "upload": {
+        "bandwidth": 7126358
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/d58389a9-7ef8-46e8-bd79-7b04da7c7461"
+    }
+}
+,
+{
+    "timestamp": "2021-11-04T18:01:41Z",
+    "ping": {
+        "latency": 21.327999999999999
+    },
+    "download": {
+        "bandwidth": 14190864
+    },
+    "upload": {
+        "bandwidth": 7085096
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/136812ad-d8f8-49ec-8e7c-a6d0a0966426"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T08:13:10Z",
+    "ping": {
+        "latency": 21.266999999999999
+    },
+    "download": {
+        "bandwidth": 22429510
+    },
+    "upload": {
+        "bandwidth": 7035730
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/1e426028-8473-4b8c-a322-fa20a5dd5303"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T09:01:48Z",
+    "ping": {
+        "latency": 20.337
+    },
+    "download": {
+        "bandwidth": 24718996
+    },
+    "upload": {
+        "bandwidth": 6897453
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/ad95a0fd-53d7-468d-93b4-4835622fed00"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T10:01:41Z",
+    "ping": {
+        "latency": 19.899000000000001
+    },
+    "download": {
+        "bandwidth": 20116350
+    },
+    "upload": {
+        "bandwidth": 7131612
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/4684fee9-56a4-4ec2-ade3-33bdac1dea90"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T11:01:43Z",
+    "ping": {
+        "latency": 22.927
+    },
+    "download": {
+        "bandwidth": 24132596
+    },
+    "upload": {
+        "bandwidth": 7008277
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/55ac33d9-8940-4ee4-8ab4-a2fe9403e4ed"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T12:01:44Z",
+    "ping": {
+        "latency": 20.122
+    },
+    "download": {
+        "bandwidth": 20152899
+    },
+    "upload": {
+        "bandwidth": 7085419
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/8f67927c-f134-45b2-84b8-e077d59c6d77"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T13:01:44Z",
+    "ping": {
+        "latency": 19.260999999999999
+    },
+    "download": {
+        "bandwidth": 21286190
+    },
+    "upload": {
+        "bandwidth": 7046023
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/b2b75cc5-6046-4fed-9be9-207818974de8"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T14:01:44Z",
+    "ping": {
+        "latency": 18.873000000000001
+    },
+    "download": {
+        "bandwidth": 18960903
+    },
+    "upload": {
+        "bandwidth": 7081520
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/0ebb8745-8763-4392-ad0a-e8192e2c0d4c"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T15:01:38Z",
+    "ping": {
+        "latency": 19.010999999999999
+    },
+    "download": {
+        "bandwidth": 22120590
+    },
+    "upload": {
+        "bandwidth": 7059866
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/8b51b7c9-eea0-4cbc-a119-ed05b2a51422"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T16:01:45Z",
+    "ping": {
+        "latency": 21.728000000000002
+    },
+    "download": {
+        "bandwidth": 15868082
+    },
+    "upload": {
+        "bandwidth": 6967611
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/fe4a000b-a4ad-4ea8-b647-97a26906c9db"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T17:01:47Z",
+    "ping": {
+        "latency": 18.949000000000002
+    },
+    "download": {
+        "bandwidth": 14193862
+    },
+    "upload": {
+        "bandwidth": 4653456
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/5e40e5fb-2074-476f-9ba8-f11171fda987"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T18:01:47Z",
+    "ping": {
+        "latency": 18.934000000000001
+    },
+    "download": {
+        "bandwidth": 13145770
+    },
+    "upload": {
+        "bandwidth": 4756414
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/9dd9a8ef-d9d1-4222-9803-62448f26e8e6"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T19:01:45Z",
+    "ping": {
+        "latency": 20.907
+    },
+    "download": {
+        "bandwidth": 11764440
+    },
+    "upload": {
+        "bandwidth": 4592697
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/d8d31a0b-ae98-49cb-aec5-b91842cc5e15"
+    }
+}
+,
+{
+    "timestamp": "2021-11-05T20:01:46Z",
+    "ping": {
+        "latency": 20.881
+    },
+    "download": {
+        "bandwidth": 10339003
+    },
+    "upload": {
+        "bandwidth": 7000115
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/107a5575-bf49-4127-b266-205e75646882"
+    }
+}
+,
+{
+    "timestamp": "2021-11-06T09:26:26Z",
+    "ping": {
+        "latency": 19.940000000000001
+    },
+    "download": {
+        "bandwidth": 16155042
+    },
+    "upload": {
+        "bandwidth": 7110869
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/3d00f6fd-a26a-4ef6-9d9c-4f4241ddeb44"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T09:04:36Z",
+    "ping": {
+        "latency": 15.983000000000001
+    },
+    "download": {
+        "bandwidth": 20504456
+    },
+    "upload": {
+        "bandwidth": 7167122
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/e2d397a9-ad6f-4ed3-92a4-d75ebf78dfd6"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T10:04:21Z",
+    "ping": {
+        "latency": 14.048999999999999
+    },
+    "download": {
+        "bandwidth": 20470776
+    },
+    "upload": {
+        "bandwidth": 6946462
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/a3763245-24da-4152-8b13-b3a6167364b7"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T11:04:19Z",
+    "ping": {
+        "latency": 15.912000000000001
+    },
+    "download": {
+        "bandwidth": 14804827
+    },
+    "upload": {
+        "bandwidth": 7103327
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/e875d2fc-e22f-47bd-a337-19d96f209bbe"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T12:04:23Z",
+    "ping": {
+        "latency": 14.912000000000001
+    },
+    "download": {
+        "bandwidth": 18276321
+    },
+    "upload": {
+        "bandwidth": 7216156
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/710a4d2c-10f6-4d86-b3d1-3fa50e2df202"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T13:04:21Z",
+    "ping": {
+        "latency": 14.958
+    },
+    "download": {
+        "bandwidth": 14117020
+    },
+    "upload": {
+        "bandwidth": 6840758
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/41358bf0-3b31-4947-b6c1-6237f49e2be6"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T14:04:27Z",
+    "ping": {
+        "latency": 12.954000000000001
+    },
+    "download": {
+        "bandwidth": 13020849
+    },
+    "upload": {
+        "bandwidth": 4278955
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/04ac56ef-1f68-43de-87bf-e9918376cb60"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T15:04:40Z",
+    "ping": {
+        "latency": 14.694000000000001
+    },
+    "download": {
+        "bandwidth": 16556755
+    },
+    "upload": {
+        "bandwidth": 6823379
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/403248a5-7a61-4629-a76c-034f87f6167c"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T16:04:23Z",
+    "ping": {
+        "latency": 12.847
+    },
+    "download": {
+        "bandwidth": 16299757
+    },
+    "upload": {
+        "bandwidth": 6685268
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/fed73969-71e2-434a-b144-73ef8bc4780a"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T17:04:24Z",
+    "ping": {
+        "latency": 12.993
+    },
+    "download": {
+        "bandwidth": 16809579
+    },
+    "upload": {
+        "bandwidth": 7142144
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/daabe6c1-f51c-4457-9339-3164e4f3b1da"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T18:04:18Z",
+    "ping": {
+        "latency": 14.763999999999999
+    },
+    "download": {
+        "bandwidth": 10612369
+    },
+    "upload": {
+        "bandwidth": 7201134
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/0b12454d-dd40-42c6-89a3-95dc55041662"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T19:04:19Z",
+    "ping": {
+        "latency": 12.952999999999999
+    },
+    "download": {
+        "bandwidth": 13637944
+    },
+    "upload": {
+        "bandwidth": 7114636
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/b11c8d33-3eb7-477a-9e0d-98c1817f99a5"
+    }
+}
+,
+{
+    "timestamp": "2021-11-07T20:04:18Z",
+    "ping": {
+        "latency": 14.106999999999999
+    },
+    "download": {
+        "bandwidth": 8944030
+    },
+    "upload": {
+        "bandwidth": 6828443
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/5331530a-064d-496d-a1cf-3e43b2e631da"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T12:20:11Z",
+    "ping": {
+        "latency": 14.954000000000001
+    },
+    "download": {
+        "bandwidth": 15636687
+    },
+    "upload": {
+        "bandwidth": 6788799
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/7d481b1f-357e-4570-9b85-7af744bbf2dd"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T13:04:28Z",
+    "ping": {
+        "latency": 14.901
+    },
+    "download": {
+        "bandwidth": 19575578
+    },
+    "upload": {
+        "bandwidth": 5962167
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/26157a67-7d68-44d6-b573-e7110eda89d3"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T14:04:15Z",
+    "ping": {
+        "latency": 14.914
+    },
+    "download": {
+        "bandwidth": 23748268
+    },
+    "upload": {
+        "bandwidth": 6901333
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/c7363045-6d8e-47aa-ada8-fc1350c37bbd"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T14:20:14Z",
+    "ping": {
+        "latency": 16.898
+    },
+    "download": {
+        "bandwidth": 12766767
+    },
+    "upload": {
+        "bandwidth": 6752620
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/88aa29c0-5dbb-4e14-a8ee-faf5ae355ce6"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T15:04:23Z",
+    "ping": {
+        "latency": 14.901
+    },
+    "download": {
+        "bandwidth": 17340245
+    },
+    "upload": {
+        "bandwidth": 6953453
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/d3ccac1c-1dd7-4f14-a724-82f75e67c6ce"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T16:04:25Z",
+    "ping": {
+        "latency": 14.879
+    },
+    "download": {
+        "bandwidth": 20959273
+    },
+    "upload": {
+        "bandwidth": 6773510
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/6e4cc291-e5bc-4a0a-9a7b-9e76c2756117"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T17:04:21Z",
+    "ping": {
+        "latency": 14.936
+    },
+    "download": {
+        "bandwidth": 13902496
+    },
+    "upload": {
+        "bandwidth": 6866182
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/76c84194-f902-44e5-b52e-8f25222919d9"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T18:04:25Z",
+    "ping": {
+        "latency": 14.974
+    },
+    "download": {
+        "bandwidth": 16382447
+    },
+    "upload": {
+        "bandwidth": 6678185
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/dac30ead-d591-4ace-a74b-15c433d35c79"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T19:04:30Z",
+    "ping": {
+        "latency": 16.109999999999999
+    },
+    "download": {
+        "bandwidth": 15592193
+    },
+    "upload": {
+        "bandwidth": 7133435
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/df1f919d-933f-465c-8c95-a9bd41b8b3ff"
+    }
+}
+,
+{
+    "timestamp": "2021-11-08T20:04:25Z",
+    "ping": {
+        "latency": 14.811
+    },
+    "download": {
+        "bandwidth": 14889542
+    },
+    "upload": {
+        "bandwidth": 6778108
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/f459fda3-3c1e-4d5a-83f8-fb1132f6a333"
+    }
+}
+,
+{
+    "timestamp": "2021-11-09T15:45:33Z",
+    "ping": {
+        "latency": 14.637
+    },
+    "download": {
+        "bandwidth": 17257997
+    },
+    "upload": {
+        "bandwidth": 6804476
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/6b71ff58-9156-4cb6-b947-5cb0995f18ac"
+    }
+}
+,
+{
+    "timestamp": "2021-11-09T16:04:29Z",
+    "ping": {
+        "latency": 18.693000000000001
+    },
+    "download": {
+        "bandwidth": 14317553
+    },
+    "upload": {
+        "bandwidth": 6152476
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/628a182a-8ac3-4337-9693-766a4bedeea5"
+    }
+}
+,
+{
+    "timestamp": "2021-11-09T17:04:26Z",
+    "ping": {
+        "latency": 14.981
+    },
+    "download": {
+        "bandwidth": 14267945
+    },
+    "upload": {
+        "bandwidth": 6883970
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/880dde46-7ae7-47bf-8bf4-68ca6e71a42a"
+    }
+}
+,
+{
+    "timestamp": "2021-11-09T18:04:25Z",
+    "ping": {
+        "latency": 15.175000000000001
+    },
+    "download": {
+        "bandwidth": 13611141
+    },
+    "upload": {
+        "bandwidth": 6795573
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/30380b87-fbdc-42a2-b438-b7d54e2cea30"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T14:16:11Z",
+    "ping": {
+        "latency": 16.341000000000001
+    },
+    "download": {
+        "bandwidth": 11991644
+    },
+    "upload": {
+        "bandwidth": 6581140
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/822d09d9-bae5-4c63-91c6-959defe672b9"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T15:15:40Z",
+    "ping": {
+        "latency": 14.943
+    },
+    "download": {
+        "bandwidth": 8589287
+    },
+    "upload": {
+        "bandwidth": 4815395
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/b025874b-363f-41c5-9ff8-2146caede5ff"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T16:15:14Z",
+    "ping": {
+        "latency": 15.311
+    },
+    "download": {
+        "bandwidth": 7279297
+    },
+    "upload": {
+        "bandwidth": 4238325
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/57657ba0-9a0d-4bf5-87fe-6ddf9bfd7a69"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T17:15:09Z",
+    "ping": {
+        "latency": 29.129999999999999
+    },
+    "download": {
+        "bandwidth": 3242812
+    },
+    "upload": {
+        "bandwidth": 4381735
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/a2f36f86-ac72-4681-a1dc-085c1cde2369"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T18:15:10Z",
+    "ping": {
+        "latency": 21.149999999999999
+    },
+    "download": {
+        "bandwidth": 6458665
+    },
+    "upload": {
+        "bandwidth": 4807958
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/5bae856c-a841-4b45-bc7b-25bc97847a6e"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T19:15:08Z",
+    "ping": {
+        "latency": 15.835000000000001
+    },
+    "download": {
+        "bandwidth": 10053761
+    },
+    "upload": {
+        "bandwidth": 3565181
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/23dd9f93-53ea-4e25-a53d-94350a15ca73"
+    }
+}
+,
+{
+    "timestamp": "2021-11-14T20:14:58Z",
+    "ping": {
+        "latency": 16.055
+    },
+    "download": {
+        "bandwidth": 13817205
+    },
+    "upload": {
+        "bandwidth": 5073900
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/967908b5-9ccd-46e6-ba04-5a03d8001bd4"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T09:33:51Z",
+    "ping": {
+        "latency": 29.940000000000001
+    },
+    "download": {
+        "bandwidth": 22514951
+    },
+    "upload": {
+        "bandwidth": 7073547
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/612a5d70-1558-41c0-badd-1d8dc4bec03d"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T10:15:07Z",
+    "ping": {
+        "latency": 21.940000000000001
+    },
+    "download": {
+        "bandwidth": 17396954
+    },
+    "upload": {
+        "bandwidth": 5329089
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/fb3ddad2-71ff-44c8-8bd2-354f1a8511a1"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T11:15:06Z",
+    "ping": {
+        "latency": 25.792000000000002
+    },
+    "download": {
+        "bandwidth": 16608495
+    },
+    "upload": {
+        "bandwidth": 6772059
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/d4f3a63a-e459-42d0-a15f-7767dba3ebc0"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T12:15:06Z",
+    "ping": {
+        "latency": 21.224
+    },
+    "download": {
+        "bandwidth": 23997261
+    },
+    "upload": {
+        "bandwidth": 6316085
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/46d62cee-d728-4dab-8b37-5c605a13bb45"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T13:15:07Z",
+    "ping": {
+        "latency": 24.02
+    },
+    "download": {
+        "bandwidth": 17093351
+    },
+    "upload": {
+        "bandwidth": 6212256
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/9cd35a34-2fc3-421b-8421-6e95163505f4"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T14:15:11Z",
+    "ping": {
+        "latency": 22.315999999999999
+    },
+    "download": {
+        "bandwidth": 15357271
+    },
+    "upload": {
+        "bandwidth": 5948090
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/9d4c0308-8195-464b-bcd0-67a525b14509"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T15:46:37Z",
+    "ping": {
+        "latency": 22.956
+    },
+    "download": {
+        "bandwidth": 20299805
+    },
+    "upload": {
+        "bandwidth": 7102746
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/d1e0e58f-546a-4720-9c63-2ce7364235ae"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T16:15:07Z",
+    "ping": {
+        "latency": 21.925999999999998
+    },
+    "download": {
+        "bandwidth": 17438725
+    },
+    "upload": {
+        "bandwidth": 7049863
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/e8002849-a984-4174-b2fa-f88d8d0a67eb"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T17:15:09Z",
+    "ping": {
+        "latency": 23.986000000000001
+    },
+    "download": {
+        "bandwidth": 8706131
+    },
+    "upload": {
+        "bandwidth": 6643446
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/45fcfd55-2b1f-4a77-a1d4-ee16bf60e480"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T18:15:08Z",
+    "ping": {
+        "latency": 20.952000000000002
+    },
+    "download": {
+        "bandwidth": 13809235
+    },
+    "upload": {
+        "bandwidth": 6831665
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/e329b1c4-65ca-4b22-9f0e-d1748d860681"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T19:15:06Z",
+    "ping": {
+        "latency": 22.952999999999999
+    },
+    "download": {
+        "bandwidth": 14694343
+    },
+    "upload": {
+        "bandwidth": 7191168
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/9bc6170b-2810-4de8-baa1-91f5bcb4911d"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T20:15:07Z",
+    "ping": {
+        "latency": 21.939
+    },
+    "download": {
+        "bandwidth": 9260891
+    },
+    "upload": {
+        "bandwidth": 7182233
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/845d3e6a-2c38-4374-ac8a-7a150f2bd271"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T21:15:05Z",
+    "ping": {
+        "latency": 22.038
+    },
+    "download": {
+        "bandwidth": 22113014
+    },
+    "upload": {
+        "bandwidth": 7098477
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/a66d8497-71b4-4364-abbd-fda29fcc26c7"
+    }
+}
+,
+{
+    "timestamp": "2021-11-15T22:15:05Z",
+    "ping": {
+        "latency": 20.969999999999999
+    },
+    "download": {
+        "bandwidth": 23683552
+    },
+    "upload": {
+        "bandwidth": 7142390
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/44363a28-6fd6-4216-a233-8fd9907191db"
+    }
+}
+,
+{
+    "timestamp": "2021-11-16T10:24:35Z",
+    "ping": {
+        "latency": 23.969999999999999
+    },
+    "download": {
+        "bandwidth": 20621017
+    },
+    "upload": {
+        "bandwidth": 6657821
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/d02783a9-776f-4479-862a-2586bc9a3662"
+    }
+}
+,
+{
+    "timestamp": "2021-11-16T11:15:10Z",
+    "ping": {
+        "latency": 25.959
+    },
+    "download": {
+        "bandwidth": 22540980
+    },
+    "upload": {
+        "bandwidth": 6872003
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/1c8c9e77-b344-4323-b6b2-ef7e0921e214"
+    }
+}
+,
+{
+    "timestamp": "2021-11-16T12:15:03Z",
+    "ping": {
+        "latency": 23.952000000000002
+    },
+    "download": {
+        "bandwidth": 19390807
+    },
+    "upload": {
+        "bandwidth": 6455981
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/c91a20dc-94ce-4daa-83cb-6bad146900fb"
+    }
+}
+,
+{
+    "timestamp": "2021-11-16T13:15:05Z",
+    "ping": {
+        "latency": 24.876000000000001
+    },
+    "download": {
+        "bandwidth": 7534512
+    },
+    "upload": {
+        "bandwidth": 5396910
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/c367a36a-c076-47b3-84b5-3fd548de8033"
+    }
+}
+,
+{
+    "timestamp": "2021-11-17T08:17:40Z",
+    "ping": {
+        "latency": 21.288
+    },
+    "download": {
+        "bandwidth": 21324579
+    },
+    "upload": {
+        "bandwidth": 7074808
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/a040b7ed-f74b-4315-ba71-acdf21da59db"
+    }
+}
+,
+{
+    "timestamp": "2021-11-17T09:17:26Z",
+    "ping": {
+        "latency": 23.948
+    },
+    "download": {
+        "bandwidth": 17788367
+    },
+    "upload": {
+        "bandwidth": 7074245
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/074dc9f2-2df4-479f-8497-50c356897cc5"
+    }
+}
+,
+{
+    "timestamp": "2021-11-17T10:17:22Z",
+    "ping": {
+        "latency": 21.951000000000001
+    },
+    "download": {
+        "bandwidth": 21796689
+    },
+    "upload": {
+        "bandwidth": 6508846
+    },
+    "result": {
+        "url": "https://www.speedtest.net/result/c/def4c904-23a2-4d91-9b56-423dc35b2d53"
+    }
+}
+]
